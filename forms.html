@@ -1,11 +1,55 @@
 <html>
     <head>
-
     </head>
     <style>
-      .container
+      .container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: pink;
+        flex-direction: column;
+      }
+      .block2{
+        height: 900px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        
+        background-color: aqua;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .items{
+        width: 100%;
+        display: flex;
+        gap: 20px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-right: 20px;
+      }
     </style>
     <body>
-        <h1></h1>
+       <div class ="container"> <h1>Student Registration Form</h1>
+    <div class="block2">
+    <div class="items"> <b>Roll No : </b><input type = "text" size = "60px"> </div> <br>
+    <div class="items"><b>Student Name : </b><input type = "text" placeholder="FirstName"> <b>-</b><input type = "text" placeholder="LastName"></div><br>
+    <div class="items"><b>Father's Name : </b><input type = "text"> </div><br>
+    <div class="items"><b>Date of Birth : </b><input type = "text" placeholder="Day"> <b>-</b><input type = "text" placeholder="Month"><b>-</b><input type = "text" placeholder="Year"><b>(DD-MM-YYYY)</b></div><br>
+    <div class="items"><b>Email id : </b><input type = "text" placeholder="+91" size = "1px"> <b>-</b><input type = "text" size = "40px" ></div><br>
+    <div class="items"><b>Password : </b><input type = "text" size = "60px"></div><br>
+    <div class="items"><b>Gender : </b><input type = "radio"><b>Female</b><input type = "radio"><b>Male</b></div><br>
+    <div class="items"><b>Department : </b><input type = "checkbox"><b>CSE</b><input type = "checkbox"><b>Civil</b><input type = "checkbox"><b>ECE</b><input type = "checkbox"><b>IT</b></div><br>
+    <div class="items"><b>Course : </b><select id="course" name="course" placeholder="course">
+   <option selected disabled>Select Course</option>
+  <option value="Data Science">Data Science</option>
+  <option value="AIML">AIML</option>
+  <option value="Cyber Security">Cyber Security</option>
+  <option value="IOT">IOT</option>
+</select></div><br>
+</div>
     </body>
 </html>

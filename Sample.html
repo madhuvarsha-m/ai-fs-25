@@ -1,0 +1,74 @@
+<html>
+    <head>
+    </head>
+    <style>
+        .box1{
+            height: 100px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            background-color: aqua;
+            top: 0;
+            z-index: 1;
+        }
+        .block2{
+            display: flex;
+            height: 900px;
+
+        }
+        .sidebar{
+            width: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: brown;
+
+        }
+        .content-area{
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+        }
+        .box3{
+            display: flex;
+            flex: 1;
+            justify-content: center;
+            align-items: center;
+            background-color: blueviolet;
+            justify-content: center;
+            align-items: center;
+            
+
+        }
+        .box4 {
+            height: 100px;
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .link{
+        font-size: 20px;
+        padding: 20px;
+        
+      }  
+        
+    </style>
+    <body>
+        <div class = "box1"> <a href = "Home" class="link">Home</a>
+         <a href = "About Us" class = "link">About Us</a>
+          <a href = " Contact Us" class = "link"> Contact Us</a></div>
+        <div class = "block2">
+            <div class = "sidebar"><h2>SideBar</h2> </div>  
+
+            <div class = "content-area">
+            <div class = "box3"><h2> Content</h2></div>
+            <div class = "box4"> <h2>Footer</h2></div>
+            </div></div>
+            
+        
+        
+    </body>
+</html>
